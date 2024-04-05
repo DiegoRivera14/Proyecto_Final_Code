@@ -9,11 +9,11 @@ public class Main {
 
         Scanner leer = new Scanner(System.in);
 
-        // Crear una lista para almacenar los nombres de los pilotos.
+        // Crear una lista para almacenar los nombres de los pilotos
 
         ArrayList<String> pilotos = new ArrayList<>();
 
-        // Solicitar al usuario que ingrese nombres de pilotos.
+        // Solicitar al usuario que ingrese nombres de pilotos
 
             System.out.println("Ingrese nombres de pilotos:");
 
@@ -23,19 +23,21 @@ public class Main {
 
             nombrePiloto = leer.nextLine();
 
-            // Añadimos el nombre del piloto a la lista.
+            // Añadimos el nombre del piloto a la lista
 
             pilotos.add(nombrePiloto);
 
         }
 
-        // Imprimir los nombres de los pilotos almacenados.
+        // Imprimir los nombres de los pilotos almacenados
 
         System.out.println("\nLista de pilotos:");
 
         for (String piloto : pilotos) {
 
-            Salida.println(piloto);
+            Salida.print(piloto);
+
+            System.out.println();
 
         }
     }
