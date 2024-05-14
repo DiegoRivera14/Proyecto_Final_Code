@@ -1,43 +1,30 @@
 import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     static PrintStream Salida = new PrintStream(System.out,true, StandardCharsets.UTF_8);
     public static void main(String[] args) {
 
-        Scanner leer = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        // Crear una lista para almacenar los nombres de los pilotos
+        List <String> pilotos = new ArrayList<>();
 
-        ArrayList<String> pilotos = new ArrayList<>();
-
-        // Solicitar al usuario que ingrese nombres de pilotos
-
-            System.out.println("Ingrese nombres de pilotos:");
-
-            String nombrePiloto;
+        Salida.println("Ingrese nombres de pilotos:");
 
         for (int i = 0; i < 10; i++) {
 
-            nombrePiloto = leer.nextLine();
-
-            // Añadimos el nombre del piloto a la lista
-
-            pilotos.add(nombrePiloto);
+            pilotos.add(scanner.nextLine());
 
         }
 
-        // Imprimir los nombres de los pilotos almacenados
-
-        System.out.println("\nLista de pilotos:");
+        Salida.println("\nLista de pilotos:");
 
         for (String piloto : pilotos) {
 
-            Salida.print(piloto);
-
-            System.out.println();
+            Salida.println(piloto);
 
         }
     }
