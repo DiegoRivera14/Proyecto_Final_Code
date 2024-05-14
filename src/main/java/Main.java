@@ -20,7 +20,7 @@ public class Main {
 
         }
 
-        Salida.println("\nLista de pilotos:");
+        Salida.println("\nLista de pilotos: ");
 
         for (String piloto : pilotos) {
 
