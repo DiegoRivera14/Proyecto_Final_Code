@@ -2,7 +2,17 @@ import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
+/**
+ * Clase principal que contiene el método main y gestiona el menú de la aplicación.
+ */
+
 public class Main {
+
+    /**
+     * Método principal que ejecuta el programa y muestra un menú de opciones al usuario.
+     *
+     * @param args Argumentos de línea de comandos (no se utilizan en este caso).
+     */
 
     static PrintStream Salida = new PrintStream(System.out,true, StandardCharsets.UTF_8);
     public static void main(String[] args) {
@@ -58,10 +68,12 @@ public class Main {
                     System.out.println("Opción no válida. Inténtalo de nuevo.");
 
             }
-
         } while (opcion != 5);
-
     }
+
+    /**
+     * Muestra el menú de opciones al usuario en la consola.
+     */
 
     private static void mostrarMenu() {
 
